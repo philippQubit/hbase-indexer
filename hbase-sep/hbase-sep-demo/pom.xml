@@ -28,6 +28,10 @@
   </parent>
 
   <dependencies>
+      <dependency>
+          <groupId>com.ngdata</groupId>
+          <artifactId>hbase-sep-impl-common</artifactId>
+      </dependency>
     <dependency>
       <groupId>com.ngdata</groupId>
       <artifactId>hbase-sep-impl</artifactId>
