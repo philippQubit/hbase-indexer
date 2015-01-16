@@ -51,6 +51,12 @@ This makes available the SepReplicationSource to HBase.
     cp hbase-sep/impl/target/hbase-sep-impl-1.0.jar hbase/lib/
     cp hbase-sep/api/target/hbase-sep-api-1.0.jar hbase/lib/
 
+Example:
+
+    mvn clean package -U -X -DskipTests -Dhbase.api=0.98
+    cp hbase-sep/hbase-sep-impl-0.98/target/hbase-sep-impl-1.6-hbase0.98-SNAPSHOT.jar /opt/hbase/lib
+    cp hbase-sep/hbase-sep-api/target/hbase-sep-api-1.6-SNAPSHOT.jar /opt/hbase/lib
+
 ### Start HBase
 
     ./bin/start-hbase
